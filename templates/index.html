@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>YouTube to PDF</title>
+  </head>
+  <body>
+    <h1>
+      Convert YouTube Video to PDF
+    </h1>
+    <form
+      action="/generate_pdf"
+      method="post"
+    >
+      <label for="youtube_link"
+        >YouTube Link:</label
+      >
+      <input
+        type="text"
+        id="youtube_link"
+        name="youtube_link"
+        required
+      />
+      <button type="submit">
+        Generate PDF
+      </button>
+    </form>
+  </body>
+</html>
